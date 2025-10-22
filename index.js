@@ -28,7 +28,7 @@ app.get("/create-table", async (req, res) => {
       );
     `);
     res.send("✅ Tabela 'alunos' criada com sucesso!");
-  } catch (err) {
+  } catch (error) {
     console.error("Erro ao criar tabela:", error);
     res.status(500).send("Erro ao criar tabela");
   }
